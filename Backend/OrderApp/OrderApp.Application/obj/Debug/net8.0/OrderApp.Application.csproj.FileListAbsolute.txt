@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\bin\Debug\net8.0\OrderApp.Application.deps.json
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\bin\Debug\net8.0\OrderApp.Application.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\bin\Debug\net8.0\OrderApp.Application.pdb
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\bin\Debug\net8.0\OrderApp.Domain.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\bin\Debug\net8.0\OrderApp.Domain.pdb
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\OrderApp.Application.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\OrderApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\OrderApp.Application.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\OrderApp.Application.AssemblyInfo.cs
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\OrderApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\OrderApp.10821452.Up2Date
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\OrderApp.Application.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\refint\OrderApp.Application.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\OrderApp.Application.pdb
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\ref\OrderApp.Application.dll

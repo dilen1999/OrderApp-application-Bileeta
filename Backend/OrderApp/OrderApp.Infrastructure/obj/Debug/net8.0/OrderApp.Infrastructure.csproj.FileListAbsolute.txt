@@ -1,0 +1,17 @@
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\bin\Debug\net8.0\OrderApp.Infrastructure.deps.json
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\bin\Debug\net8.0\OrderApp.Infrastructure.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\bin\Debug\net8.0\OrderApp.Infrastructure.pdb
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\bin\Debug\net8.0\OrderApp.Application.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\bin\Debug\net8.0\OrderApp.Domain.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\bin\Debug\net8.0\OrderApp.Application.pdb
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\bin\Debug\net8.0\OrderApp.Domain.pdb
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\obj\Debug\net8.0\OrderApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\obj\Debug\net8.0\OrderApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\obj\Debug\net8.0\OrderApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\obj\Debug\net8.0\OrderApp.Infrastructure.AssemblyInfo.cs
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\obj\Debug\net8.0\OrderApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\obj\Debug\net8.0\OrderApp.2DBCC50E.Up2Date
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\obj\Debug\net8.0\OrderApp.Infrastructure.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\obj\Debug\net8.0\refint\OrderApp.Infrastructure.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\obj\Debug\net8.0\OrderApp.Infrastructure.pdb
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Infrastructure\obj\Debug\net8.0\ref\OrderApp.Infrastructure.dll

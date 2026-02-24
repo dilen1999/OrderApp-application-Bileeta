@@ -1,0 +1,11 @@
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\bin\Debug\net8.0\OrderApp.Domain.deps.json
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\bin\Debug\net8.0\OrderApp.Domain.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\bin\Debug\net8.0\OrderApp.Domain.pdb
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\OrderApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\OrderApp.Domain.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\OrderApp.Domain.AssemblyInfo.cs
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\OrderApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\OrderApp.Domain.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\refint\OrderApp.Domain.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\OrderApp.Domain.pdb
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\ref\OrderApp.Domain.dll
