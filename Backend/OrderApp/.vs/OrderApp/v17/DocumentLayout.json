@@ -1,0 +1,398 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D437EA1-C3DE-4063-9E67-1E230ABF7ED9}|OrderApp.Api\\OrderApp.Api.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D437EA1-C3DE-4063-9E67-1E230ABF7ED9}|OrderApp.Api\\OrderApp.Api.csproj|solutionrelative:orderapp.api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D437EA1-C3DE-4063-9E67-1E230ABF7ED9}|OrderApp.Api\\OrderApp.Api.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D437EA1-C3DE-4063-9E67-1E230ABF7ED9}|OrderApp.Api\\OrderApp.Api.csproj|solutionrelative:orderapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|solutionrelative:orderapp.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558A6C3D-1F0D-4D86-8D15-FAB40D5AF043}|OrderApp.Infrastructure\\OrderApp.Infrastructure.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.infrastructure\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558A6C3D-1F0D-4D86-8D15-FAB40D5AF043}|OrderApp.Infrastructure\\OrderApp.Infrastructure.csproj|solutionrelative:orderapp.infrastructure\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.application\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|solutionrelative:orderapp.application\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.application\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|solutionrelative:orderapp.application\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.application\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|solutionrelative:orderapp.application\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D437EA1-C3DE-4063-9E67-1E230ABF7ED9}|OrderApp.Api\\OrderApp.Api.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D437EA1-C3DE-4063-9E67-1E230ABF7ED9}|OrderApp.Api\\OrderApp.Api.csproj|solutionrelative:orderapp.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|solutionrelative:orderapp.application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558A6C3D-1F0D-4D86-8D15-FAB40D5AF043}|OrderApp.Infrastructure\\OrderApp.Infrastructure.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558A6C3D-1F0D-4D86-8D15-FAB40D5AF043}|OrderApp.Infrastructure\\OrderApp.Infrastructure.csproj|solutionrelative:orderapp.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558A6C3D-1F0D-4D86-8D15-FAB40D5AF043}|OrderApp.Infrastructure\\OrderApp.Infrastructure.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558A6C3D-1F0D-4D86-8D15-FAB40D5AF043}|OrderApp.Infrastructure\\OrderApp.Infrastructure.csproj|solutionrelative:orderapp.infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.application\\dtos\\orderresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|solutionrelative:orderapp.application\\dtos\\orderresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.application\\dtos\\orderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|solutionrelative:orderapp.application\\dtos\\orderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D437EA1-C3DE-4063-9E67-1E230ABF7ED9}|OrderApp.Api\\OrderApp.Api.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6D437EA1-C3DE-4063-9E67-1E230ABF7ED9}|OrderApp.Api\\OrderApp.Api.csproj|solutionrelative:orderapp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558A6C3D-1F0D-4D86-8D15-FAB40D5AF043}|OrderApp.Infrastructure\\OrderApp.Infrastructure.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.infrastructure\\caching\\rediscacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558A6C3D-1F0D-4D86-8D15-FAB40D5AF043}|OrderApp.Infrastructure\\OrderApp.Infrastructure.csproj|solutionrelative:orderapp.infrastructure\\caching\\rediscacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.application\\interfaces\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|solutionrelative:orderapp.application\\interfaces\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.application\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4ED520-F225-4AD0-93BD-5B23D1119CF9}|OrderApp.Application\\OrderApp.Application.csproj|solutionrelative:orderapp.application\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE43261-B060-4E82-8C3D-51CDB307914D}|OrderApp.Domain\\OrderApp.Domain.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE43261-B060-4E82-8C3D-51CDB307914D}|OrderApp.Domain\\OrderApp.Domain.csproj|solutionrelative:orderapp.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE43261-B060-4E82-8C3D-51CDB307914D}|OrderApp.Domain\\OrderApp.Domain.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE43261-B060-4E82-8C3D-51CDB307914D}|OrderApp.Domain\\OrderApp.Domain.csproj|solutionrelative:orderapp.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE43261-B060-4E82-8C3D-51CDB307914D}|OrderApp.Domain\\OrderApp.Domain.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.domain\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE43261-B060-4E82-8C3D-51CDB307914D}|OrderApp.Domain\\OrderApp.Domain.csproj|solutionrelative:orderapp.domain\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE43261-B060-4E82-8C3D-51CDB307914D}|OrderApp.Domain\\OrderApp.Domain.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BE43261-B060-4E82-8C3D-51CDB307914D}|OrderApp.Domain\\OrderApp.Domain.csproj|solutionrelative:orderapp.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558A6C3D-1F0D-4D86-8D15-FAB40D5AF043}|OrderApp.Infrastructure\\OrderApp.Infrastructure.csproj|c:\\users\\dell\\desktop\\bileeta\\backend\\orderapp\\orderapp.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558A6C3D-1F0D-4D86-8D15-FAB40D5AF043}|OrderApp.Infrastructure\\OrderApp.Infrastructure.csproj|solutionrelative:orderapp.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "OrderApp.Application\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\Services\\CustomerService.cs",
+              "RelativeToolTip": "OrderApp.Application\\Services\\CustomerService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwDsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T17:05:57.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Api\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "OrderApp.Api\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Api\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "OrderApp.Api\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:26:26.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "OrderApp.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "OrderApp.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:25:32.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerDto.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\DTOs\\CustomerDto.cs",
+              "RelativeDocumentMoniker": "OrderApp.Application\\DTOs\\CustomerDto.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\DTOs\\CustomerDto.cs",
+              "RelativeToolTip": "OrderApp.Application\\DTOs\\CustomerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:42:17.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\DTOs\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "OrderApp.Application\\DTOs\\OrderItemDto.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\DTOs\\OrderItemDto.cs",
+              "RelativeToolTip": "OrderApp.Application\\DTOs\\OrderItemDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:23:26.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Api\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "OrderApp.Api\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Api\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "OrderApp.Api\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:26:35.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Api\\Program.cs",
+              "RelativeDocumentMoniker": "OrderApp.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Api\\Program.cs",
+              "RelativeToolTip": "OrderApp.Api\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:35:09.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "OrderApp.Infrastructure\\Persistence\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeToolTip": "OrderApp.Infrastructure\\Persistence\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:24:55.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\Interfaces\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "OrderApp.Application\\Interfaces\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\Interfaces\\ICustomerRepository.cs",
+              "RelativeToolTip": "OrderApp.Application\\Interfaces\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:23:56.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Infrastructure\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "OrderApp.Infrastructure\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Infrastructure\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "OrderApp.Infrastructure\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:25:18.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "OrderApp.Application\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\Services\\OrderService.cs",
+              "RelativeToolTip": "OrderApp.Application\\Services\\OrderService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAmwCYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:24:28.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\DTOs\\OrderRequestDto.cs",
+              "RelativeDocumentMoniker": "OrderApp.Application\\DTOs\\OrderRequestDto.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\DTOs\\OrderRequestDto.cs",
+              "RelativeToolTip": "OrderApp.Application\\DTOs\\OrderRequestDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:23:07.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "OrderApp.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Api\\appsettings.json",
+              "RelativeToolTip": "OrderApp.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-24T16:34:54.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\DTOs\\OrderResponseDto.cs",
+              "RelativeDocumentMoniker": "OrderApp.Application\\DTOs\\OrderResponseDto.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\DTOs\\OrderResponseDto.cs",
+              "RelativeToolTip": "OrderApp.Application\\DTOs\\OrderResponseDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:23:17.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ICacheService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\Interfaces\\ICacheService.cs",
+              "RelativeDocumentMoniker": "OrderApp.Application\\Interfaces\\ICacheService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\Interfaces\\ICacheService.cs",
+              "RelativeToolTip": "OrderApp.Application\\Interfaces\\ICacheService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:24:05.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\Interfaces\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "OrderApp.Application\\Interfaces\\IOrderRepository.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Application\\Interfaces\\IOrderRepository.cs",
+              "RelativeToolTip": "OrderApp.Application\\Interfaces\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:23:46.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Domain\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "OrderApp.Domain\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Domain\\Entities\\Order.cs",
+              "RelativeToolTip": "OrderApp.Domain\\Entities\\Order.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:21:45.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RedisCacheService.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Infrastructure\\Caching\\RedisCacheService.cs",
+              "RelativeDocumentMoniker": "OrderApp.Infrastructure\\Caching\\RedisCacheService.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Infrastructure\\Caching\\RedisCacheService.cs",
+              "RelativeToolTip": "OrderApp.Infrastructure\\Caching\\RedisCacheService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:25:51.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Domain\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "OrderApp.Domain\\Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Domain\\Entities\\Customer.cs",
+              "RelativeToolTip": "OrderApp.Domain\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:22:06.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Domain\\Entities\\OrderItem.cs",
+              "RelativeDocumentMoniker": "OrderApp.Domain\\Entities\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Domain\\Entities\\OrderItem.cs",
+              "RelativeToolTip": "OrderApp.Domain\\Entities\\OrderItem.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:21:56.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Domain\\Common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "OrderApp.Domain\\Common\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Domain\\Common\\BaseEntity.cs",
+              "RelativeToolTip": "OrderApp.Domain\\Common\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:22:27.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "OrderApp.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Bileeta\\Backend\\OrderApp\\OrderApp.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "OrderApp.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T16:26:06.745Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

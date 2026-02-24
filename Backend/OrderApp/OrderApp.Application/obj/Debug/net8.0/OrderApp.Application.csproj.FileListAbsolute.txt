@@ -13,3 +13,6 @@ C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\ne
 C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\refint\OrderApp.Application.dll
 C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\OrderApp.Application.pdb
 C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\ref\OrderApp.Application.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\bin\Debug\net8.0\OrderApp.Application.runtimeconfig.json
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\OrderApp.Application.sourcelink.json
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Application\obj\Debug\net8.0\OrderApp.Application.genruntimeconfig.cache

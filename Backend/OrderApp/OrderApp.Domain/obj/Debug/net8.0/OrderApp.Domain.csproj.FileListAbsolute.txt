@@ -9,3 +9,7 @@ C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\
 C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\refint\OrderApp.Domain.dll
 C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\OrderApp.Domain.pdb
 C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\ref\OrderApp.Domain.dll
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\bin\Debug\net8.0\OrderApp.Domain.runtimeconfig.json
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\OrderApp.Domain.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\OrderApp.Domain.sourcelink.json
+C:\Users\DELL\Desktop\Bileeta\Backend\OrderApp\OrderApp.Domain\obj\Debug\net8.0\OrderApp.Domain.genruntimeconfig.cache

@@ -1,4 +1,5 @@
-import { useState, useMemo } from "react";
+// src/components/OrderForm.tsx
+import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -11,56 +12,74 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { useOrderStore } from "@/hooks/useOrderStore";
-import {
-  getCustomerByCode,
-  getProductByCode,
-  calcLineTotal,
-  calcSubTotal,
-  calcDiscountTotal,
-  calcGrandTotal,
-  type OrderItem,
-} from "@/data/masterData";
 import { Plus, Trash2, Save, Search, FilePlus, FileX } from "lucide-react";
 import { toast } from "sonner";
 
-const emptyItem = (): OrderItem => ({
+import type { OrderItemDto, OrderRequestDto, OrderResponseDto } from "@/types/order";
+import { createOrder, updateOrder, deleteOrder } from "@/lib/orderApi";
+
+const API_BASE = import.meta.env.VITE_API_BASE_URL as string;
+
+const emptyItem = (): OrderItemDto => ({
   productCode: "",
   quantity: 0,
   unitPrice: 0,
   discount: 0,
 });
 
-const OrderForm = () => {
-  const { saveOrder, getOrder, deleteOrder } = useOrderStore();
+const calcLineTotal = (i: OrderItemDto) =>
+  (Number(i.quantity) || 0) * (Number(i.unitPrice) || 0) - (Number(i.discount) || 0);
 
+const calcSubTotal = (items: OrderItemDto[]) =>
+  items.reduce((sum, i) => sum + (Number(i.quantity) || 0) * (Number(i.unitPrice) || 0), 0);
+
+const calcDiscountTotal = (items: OrderItemDto[]) =>
+  items.reduce((sum, i) => sum + (Number(i.discount) || 0), 0);
+
+const calcGrandTotal = (items: OrderItemDto[], taxRate: number) => {
+  const sub = calcSubTotal(items);
+  const disc = calcDiscountTotal(items);
+  const net = sub - disc;
+  const tax = net * ((Number(taxRate) || 0) / 100);
+  return net + tax;
+};
+
+const OrderForm = () => {
   const [orderId, setOrderId] = useState(0);
   const [orderIdInput, setOrderIdInput] = useState("");
+
   const [customerCode, setCustomerCode] = useState("");
-  const [items, setItems] = useState<OrderItem[]>([emptyItem()]);
+  const [customerName, setCustomerName] = useState("");
+
+  const [items, setItems] = useState<OrderItemDto[]>([emptyItem()]);
   const [taxRate, setTaxRate] = useState(0);
+
   const [isSaved, setIsSaved] = useState(false);
 
-  const customerName = useMemo(() => {
-    const c = getCustomerByCode(customerCode);
-    return c?.name ?? "";
-  }, [customerCode]);
+  // cache indicators (from backend headers)
+  const [orderCacheHeader, setOrderCacheHeader] = useState<string>("");
+  const [customerCacheHeader, setCustomerCacheHeader] = useState<string>("");
 
+  const validItems = useMemo(
+    () => items.filter((i) => i.productCode.trim() !== ""),
+    [items]
+  );
+
+  // UI computed totals (instant feedback). Backend also calculates on save/load.
   const subTotal = useMemo(() => calcSubTotal(items), [items]);
   const discountTotal = useMemo(() => calcDiscountTotal(items), [items]);
   const grandTotal = useMemo(() => calcGrandTotal(items, taxRate), [items, taxRate]);
 
-  const updateItem = (index: number, field: keyof OrderItem, value: string) => {
+  const fmt = (n: number) =>
+    (Number(n) || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+  const updateItem = (index: number, field: keyof OrderItemDto, value: string) => {
     setItems((prev) => {
       const updated = [...prev];
       const item = { ...updated[index] };
 
       if (field === "productCode") {
         item.productCode = value;
-        const product = getProductByCode(value);
-        if (product) {
-          item.unitPrice = product.unitPrice;
-        }
       } else if (field === "quantity" || field === "unitPrice" || field === "discount") {
         (item as any)[field] = parseFloat(value) || 0;
       }
@@ -71,9 +90,7 @@ const OrderForm = () => {
     setIsSaved(false);
   };
 
-  const addRow = () => {
-    setItems((prev) => [...prev, emptyItem()]);
-  };
+  const addRow = () => setItems((prev) => [...prev, emptyItem()]);
 
   const removeRow = (index: number) => {
     if (items.length <= 1) return;
@@ -85,79 +102,159 @@ const OrderForm = () => {
     setOrderId(0);
     setOrderIdInput("");
     setCustomerCode("");
+    setCustomerName("");
     setItems([emptyItem()]);
     setTaxRate(0);
     setIsSaved(false);
+    setOrderCacheHeader("");
+    setCustomerCacheHeader("");
   };
 
-  const handleLoadOrder = () => {
+  // ---- API calls ----
+
+  const loadCustomerName = async (code: string) => {
+    const c = code.trim();
+    if (!c) {
+      setCustomerName("");
+      setCustomerCacheHeader("");
+      return;
+    }
+
+    try {
+      const res = await fetch(`${API_BASE}/api/customers/${encodeURIComponent(c)}`);
+      setCustomerCacheHeader(res.headers.get("X-Cache") || "");
+      if (!res.ok) {
+        setCustomerName("");
+        return;
+      }
+      const data = (await res.json()) as { customerCode: string; customerName: string };
+      setCustomerName(data.customerName ?? "");
+    } catch {
+      setCustomerName("");
+      setCustomerCacheHeader("");
+    }
+  };
+
+  const handleLoadOrder = async () => {
     const id = parseInt(orderIdInput);
     if (isNaN(id)) {
       toast.error("Please enter a valid Order ID");
       return;
     }
-    const order = getOrder(id);
-    if (!order) {
-      toast.error(`Order #${id} not found`);
-      return;
+
+    try {
+      const res = await fetch(`${API_BASE}/api/orders/${id}`);
+      setOrderCacheHeader(res.headers.get("X-Cache") || "");
+
+      if (!res.ok) {
+        toast.error(`Order #${id} not found`);
+        return;
+      }
+
+      const order = (await res.json()) as OrderResponseDto;
+
+      setOrderId(order.orderId);
+      setOrderIdInput(String(order.orderId));
+      setCustomerCode(order.customerCode);
+      setCustomerName(order.customerName ?? "");
+      setItems(order.items?.length ? order.items : [emptyItem()]);
+      setTaxRate(order.taxRate ?? 0);
+      setIsSaved(true);
+
+      toast.success(`Order #${order.orderId} loaded${orderCacheHeader ? ` (${orderCacheHeader})` : ""}`);
+    } catch (e: any) {
+      toast.error(e?.message || "Failed to load order");
     }
-    setOrderId(order.orderId);
-    setCustomerCode(order.customerCode);
-    setItems(order.items.length > 0 ? order.items : [emptyItem()]);
-    setTaxRate(order.taxRate);
-    setIsSaved(true);
-    toast.success(`Order #${order.orderId} loaded`);
   };
 
-  const handleSave = () => {
-    if (!customerCode.trim()) {
-      toast.error("Please enter a Customer Code");
-      return;
-    }
-    if (!getCustomerByCode(customerCode)) {
-      toast.error("Invalid Customer Code");
-      return;
-    }
-    const validItems = items.filter((i) => i.productCode.trim() !== "");
-    if (validItems.length === 0) {
-      toast.error("Please add at least one product");
-      return;
-    }
+  const handleSave = async () => {
+    try {
+      if (!customerCode.trim()) {
+        toast.error("Please enter a Customer Code");
+        return;
+      }
 
-    const saved = saveOrder({
-      orderId,
-      customerCode,
-      items: validItems,
-      taxRate,
-    });
-    setOrderId(saved.orderId);
-    setOrderIdInput(String(saved.orderId));
-    setIsSaved(true);
-    toast.success(`Order #${saved.orderId} saved successfully`);
+      if (validItems.length === 0) {
+        toast.error("Please add at least one product");
+        return;
+      }
+
+      // Basic item validation (frontend)
+      for (const it of validItems) {
+        const gross = (Number(it.quantity) || 0) * (Number(it.unitPrice) || 0);
+        if (!it.productCode.trim()) return toast.error("Product code is required");
+        if ((Number(it.quantity) || 0) <= 0) return toast.error("Quantity must be > 0");
+        if ((Number(it.unitPrice) || 0) < 0) return toast.error("Unit price cannot be negative");
+        if ((Number(it.discount) || 0) < 0) return toast.error("Discount cannot be negative");
+        if ((Number(it.discount) || 0) > gross) return toast.error("Discount cannot exceed line amount");
+      }
+
+      const payload: OrderRequestDto = {
+        customerCode: customerCode.trim(),
+        taxRate: Number(taxRate) || 0,
+        items: validItems.map((i) => ({
+          productCode: i.productCode.trim(),
+          quantity: Number(i.quantity) || 0,
+          unitPrice: Number(i.unitPrice) || 0,
+          discount: Number(i.discount) || 0,
+        })),
+      };
+
+      let saved: OrderResponseDto;
+      if (orderId === 0) {
+        saved = await createOrder(payload);
+      } else {
+        saved = await updateOrder(orderId, payload);
+      }
+
+      // update UI from server response (source of truth)
+      setOrderId(saved.orderId);
+      setOrderIdInput(String(saved.orderId));
+      setCustomerCode(saved.customerCode);
+      setCustomerName(saved.customerName ?? "");
+      setItems(saved.items?.length ? saved.items : [emptyItem()]);
+      setTaxRate(saved.taxRate ?? 0);
+
+      setIsSaved(true);
+      toast.success(`Order #${saved.orderId} saved successfully`);
+    } catch (e: any) {
+      // Your backend might return plain text or JSON; this keeps it simple
+      toast.error(e?.message || "Save failed");
+    }
   };
 
-  const handleDelete = () => {
+  const handleDelete = async () => {
     if (orderId === 0) {
       toast.error("No saved order to delete");
       return;
     }
-    deleteOrder(orderId);
-    toast.success(`Order #${orderId} deleted`);
-    resetForm();
+
+    try {
+      await deleteOrder(orderId);
+      toast.success(`Order #${orderId} deleted`);
+      resetForm();
+    } catch (e: any) {
+      toast.error(e?.message || "Delete failed");
+    }
   };
 
-  const fmt = (n: number) =>
-    n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  // auto-load customer name when user leaves field OR presses Enter
+  useEffect(() => {
+    // optional: if user cleared code, clear name immediately
+    if (!customerCode.trim()) {
+      setCustomerName("");
+      setCustomerCacheHeader("");
+    }
+  }, [customerCode]);
 
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="mx-auto max-w-5xl">
         <Card className="shadow-lg">
           <CardHeader className="border-b bg-primary/5">
-            <CardTitle className="text-2xl font-bold tracking-tight">
-              Customer Order
-            </CardTitle>
+            <CardTitle className="text-2xl font-bold tracking-tight">Customer Order</CardTitle>
           </CardHeader>
+
           <CardContent className="space-y-6 p-6">
             {/* Order ID & Customer */}
             <div className="grid gap-6 md:grid-cols-2">
@@ -173,7 +270,12 @@ const OrderForm = () => {
                       onKeyDown={(e) => e.key === "Enter" && handleLoadOrder()}
                     />
                   </div>
-                  <Button variant="outline" size="icon" onClick={handleLoadOrder} title="Load Order">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={handleLoadOrder}
+                    title="Load Order"
+                  >
                     <Search className="h-4 w-4" />
                   </Button>
                 </div>
@@ -190,9 +292,15 @@ const OrderForm = () => {
                         setCustomerCode(e.target.value);
                         setIsSaved(false);
                       }}
+                      onBlur={() => loadCustomerName(customerCode)}
+                      onKeyDown={(e) => e.key === "Enter" && loadCustomerName(customerCode)}
                     />
+
                     <span className="text-sm text-muted-foreground italic">
                       {customerName || "Customer name will display here"}
+                      {customerCacheHeader ? (
+                        <span className="ml-2 not-italic">| Cache: {customerCacheHeader}</span>
+                      ) : null}
                     </span>
                   </div>
                 </div>
@@ -224,6 +332,7 @@ const OrderForm = () => {
                     <TableHead className="w-[50px]" />
                   </TableRow>
                 </TableHeader>
+
                 <TableBody>
                   {items.map((item, index) => (
                     <TableRow key={index}>
@@ -235,6 +344,7 @@ const OrderForm = () => {
                           className="h-8"
                         />
                       </TableCell>
+
                       <TableCell>
                         <Input
                           type="number"
@@ -244,6 +354,7 @@ const OrderForm = () => {
                           className="h-8"
                         />
                       </TableCell>
+
                       <TableCell>
                         <Input
                           type="number"
@@ -254,6 +365,7 @@ const OrderForm = () => {
                           className="h-8"
                         />
                       </TableCell>
+
                       <TableCell>
                         <Input
                           type="number"
@@ -264,9 +376,11 @@ const OrderForm = () => {
                           className="h-8"
                         />
                       </TableCell>
+
                       <TableCell className="text-right font-medium tabular-nums">
                         {fmt(calcLineTotal(item))}
                       </TableCell>
+
                       <TableCell>
                         <Button
                           variant="ghost"
@@ -284,7 +398,12 @@ const OrderForm = () => {
               </Table>
 
               <div className="border-t p-2">
-                <Button variant="ghost" size="sm" onClick={addRow} className="gap-1.5 text-primary">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={addRow}
+                  className="gap-1.5 text-primary"
+                >
                   <Plus className="h-4 w-4" /> Add Product
                 </Button>
               </div>
@@ -299,12 +418,14 @@ const OrderForm = () => {
                     {fmt(subTotal)}
                   </span>
                 </div>
+
                 <div className="flex items-center justify-between">
                   <Label className="text-muted-foreground">Discount Total</Label>
                   <span className="w-[140px] text-right font-medium tabular-nums">
                     {fmt(discountTotal)}
                   </span>
                 </div>
+
                 <div className="flex items-center justify-between">
                   <Label htmlFor="taxRate" className="text-muted-foreground">
                     Tax Rate (%)
@@ -322,6 +443,7 @@ const OrderForm = () => {
                     className="h-8 w-[140px] text-right"
                   />
                 </div>
+
                 <div className="flex items-center justify-between border-t pt-3">
                   <Label className="text-base font-semibold">Grand Total</Label>
                   <span className="w-[140px] text-right text-lg font-bold tabular-nums text-primary">
@@ -335,6 +457,7 @@ const OrderForm = () => {
             {orderId > 0 && (
               <div className="text-sm text-muted-foreground">
                 Order #{orderId} {isSaved ? "— Saved" : "— Unsaved changes"}
+                {orderCacheHeader ? <span className="ml-2">| Cache: {orderCacheHeader}</span> : null}
               </div>
             )}
           </CardContent>
